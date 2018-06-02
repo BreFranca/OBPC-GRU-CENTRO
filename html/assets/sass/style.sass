@@ -1,0 +1,221 @@
+@import "master"
+
+.gridC
+	max-width: 960px
+	margin: 0 auto
+
+body
+	font-family: arial
+	font-size: 16px
+	font-family: $oswaldRegular
+	header
+		#headerTop
+			background: $cyan
+			padding: 20px 0
+			.social-links
+				float: left
+				i
+					display: inline-block
+					margin-right: 25px
+					color: #fff
+					font-size: 24px
+			.search
+				float: left
+				input
+					+size(200px 30px)
+			.ao-vivo
+				float: right
+				a
+					font-size: 16px
+					+size(120px 30px)
+					display: block
+					line-height: 30px
+					text-align: center
+					background: $yellow
+					color: $white
+					text-decoration: none
+					text-transform: uppercase
+		#menu
+			.logoMain
+				img
+					display: block
+					max-width: 100%
+					height: auto
+					+margin(20px auto)
+			nav
+				ul
+					text-align: center
+					li
+						display: inline-block
+						position: relative
+						+padding(0 30px)
+						a
+							font-size: 16px
+							font-family: $oswaldBold
+							text-decoration: none
+							color: $cyan
+							text-transform: uppercase
+					&.sub-menu
+						position: absolute
+						top: 40px
+						min-width: 150px
+						li
+							display: block
+							text-align: left
+							+padding(5px 10px 5px 10px)
+							background: $cyan
+							a
+								color: $white
+								text-transform: none
+								font-size: 14px
+	section
+		+padding(50px 0)
+		.titleSec
+			h2
+				font-size: 36px
+				text-align: center
+				font-family: $oswaldBold
+				text-transform: uppercase
+				&:after
+					content: ' '
+					display: block
+					+size(120px 4px)
+					background: $cyan
+					+margin(10px auto 0 auto)
+
+	#banner-home
+		background: $blue
+		+padding(0 null 0 null)
+		&:after
+			@extend %clearfix
+		article
+			float: left
+			position: relative
+			.txt
+				position: absolute
+				top: 50%
+				left: 50%
+				+transform(translate(-50%, -50%))
+				.btnPlay
+					+size(132px)
+					+margin(0 auto 15px)
+					background: url('../img/btnPlay.png') center center no-repea
+				p
+					font-size: 18px
+					text-transform: uppercase
+					strong
+						color: $yellow
+			&.bannerLeft
+				background: #ccc
+				+size(600px 500px)
+			&.bannerRight
+				background: #ccc
+				+size(360px 250px)
+				&.top
+					background: #ccc
+				.txt
+					bottom: 30px
+					top: auto
+					p
+						font-size: 14px
+	#ultimos-videos
+		.videos
+			padding-top: 30px
+			&:after
+				@extend %clearfix
+			article
+				float: left
+				+size(48% 285px)
+				display: block
+				background: #ccc
+				position: relative
+				+margin(15px 1%)
+				.btnPlay
+					+size(83px)
+					display: block
+					+margin(0 auto 15px auto)
+					background: url('../img/btnPlay-menor.png') center center no-repeat
+				.txt
+					position: absolute
+					+position(50% null null 50%)
+					+transform(translate(-50%, -50%))
+					text-align: center
+					p
+						font-size: 16px
+						text-transform: uppercase
+					span
+						display: block
+						font-size: 12px
+						color: $yellow
+						text-transform: uppercase
+			.btnVerMais
+				+size(240px 50px)
+				display: block
+				border: 2px solid $yellow
+				+margin(null auto)
+				text-align: center
+				margin-top: 20px
+				a
+					line-height: 50px
+					color: $cyan
+					text-transform: uppercase
+					text-decoration: none
+					text-align: center
+	#ultimas-fotos
+		.fotos
+			margin-top: 30px
+			&:after
+				@extend %clearfix
+			.foto
+				float: left
+				+size(48% 150px)
+				display: block
+				+margin(10px 1%)
+				.image
+					background: #ccc
+					+size(47% 150px)
+					margin-right: 10px
+					display: inline-block
+					vertical-align: middle
+				.txt
+					width: 49%
+					display: inline-block
+					vertical-align: middle
+					p
+						font-family: $oswaldBold
+						font-size: 20px
+						color: $cyan
+						padding-bottom: 30px
+					span
+						display: block
+						font-size: 14px
+						font-family: $oswaldSemi
+						color: $grey
+			.btnVerMais
+				+size(240px 50px)
+				display: block
+				border: 2px solid $yellow
+				+margin(null auto)
+				text-align: center
+				margin-top: 20px
+				a
+					line-height: 50px
+					color: $cyan
+					text-transform: uppercase
+					text-decoration: none
+					text-align: center
+	#ao-vivo
+		.lives
+			text-align: center
+			.live
+				display: inline-block
+				+margin(20px 20px 0 20px)
+				a
+					+size(120px 42px)
+					display: block
+				&.facebook-live
+					a
+						background: url('../img/facebook-live.png') center center no-repeat
+				&.youtube-live
+					a
+						background: url('../img/youtube-live.png') center center no-repeat

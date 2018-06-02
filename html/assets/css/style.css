@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+@font-face {
+  font-family: "Oswald-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Oswald-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Oswald-Light.woff2") format("woff2"), url("fonts/Oswald-Light.woff") format("woff"), url("fonts/Oswald-Light.ttf") format("truetype"), url("fonts/Oswald-Light.svg#Oswald-Light") format("svg"); }
+
+@font-face {
+  font-family: "Oswald-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Oswald-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Oswald-Regular.woff2") format("woff2"), url("fonts/Oswald-Regular.woff") format("woff"), url("fonts/Oswald-Regular.ttf") format("truetype"), url("fonts/Oswald-Regular.svg#Oswald-Regular") format("svg"); }
+
+@font-face {
+  font-family: "Oswald-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Oswald-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Oswald-Bold.woff2") format("woff2"), url("fonts/Oswald-Bold.woff") format("woff"), url("fonts/Oswald-Bold.ttf") format("truetype"), url("fonts/Oswald-Bold.svg#Oswald-Bold") format("svg"); }
+
+@font-face {
+  font-family: "Oswald-SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Oswald-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Oswald-SemiBold.woff2") format("woff2"), url("fonts/Oswald-SemiBold.woff") format("woff"), url("fonts/Oswald-SemiBold.ttf") format("truetype"), url("fonts/Oswald-SemiBold.svg#Oswald-SemiBold") format("svg"); }
+
+.hide {
+  opacity: 0;
+  visibility: hidden; }
+
+.show {
+  opacity: 1;
+  visibility: visible; }
+
+.transDefault {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
+.circle {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%; }
+
+.blockCenter, .gridE, .gridD {
+  margin-left: auto;
+  margin-right: auto; }
+
+.fleft {
+  float: left; }
+
+.fright {
+  float: right; }
+
+.clearfix {
+  clear: both; }
+
+.gridE {
+  width: 90%; }
+
+.gridD {
+  max-width: 960px; }
+
+html {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+  body * {
+    margin: 0;
+    padding: 0; }
+  body a, body button, body input, body textarea {
+    outline: none; }
+
+body #banner-home:after, body #ultimos-videos .videos:after, body #ultimas-fotos .fotos:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  visibility: hidden;
+  overflow: hidden; }
+
+.msgUpdateIE {
+  display: none; }
+
+.gridC {
+  max-width: 960px;
+  margin: 0 auto; }
+
+body {
+  font-family: arial;
+  font-size: 16px;
+  font-family: "Oswald-Regular", Arial, Sans-serif; }
+  body header #headerTop {
+    background: #0092f2;
+    padding: 20px 0; }
+    body header #headerTop .social-links {
+      float: left; }
+      body header #headerTop .social-links i {
+        display: inline-block;
+        margin-right: 25px;
+        color: #fff;
+        font-size: 24px; }
+    body header #headerTop .search {
+      float: left; }
+      body header #headerTop .search input {
+        height: 30px;
+        width: 200px; }
+    body header #headerTop .ao-vivo {
+      float: right; }
+      body header #headerTop .ao-vivo a {
+        font-size: 16px;
+        height: 30px;
+        width: 120px;
+        display: block;
+        line-height: 30px;
+        text-align: center;
+        background: #ffcc00;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase; }
+  body header #menu .logoMain img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; }
+  body header #menu nav ul {
+    text-align: center; }
+    body header #menu nav ul li {
+      display: inline-block;
+      position: relative;
+      padding: 0 30px; }
+      body header #menu nav ul li a {
+        font-size: 16px;
+        font-family: "Oswald-Bold", Arial, Sans-serif;
+        text-decoration: none;
+        color: #0092f2;
+        text-transform: uppercase; }
+    body header #menu nav ul.sub-menu {
+      position: absolute;
+      top: 40px;
+      min-width: 150px; }
+      body header #menu nav ul.sub-menu li {
+        display: block;
+        text-align: left;
+        padding: 5px 10px;
+        background: #0092f2; }
+        body header #menu nav ul.sub-menu li a {
+          color: #ffffff;
+          text-transform: none;
+          font-size: 14px; }
+  body section {
+    padding: 50px 0; }
+    body section .titleSec h2 {
+      font-size: 36px;
+      text-align: center;
+      font-family: "Oswald-Bold", Arial, Sans-serif;
+      text-transform: uppercase; }
+      body section .titleSec h2:after {
+        content: ' ';
+        display: block;
+        height: 4px;
+        width: 120px;
+        background: #0092f2;
+        margin: 10px auto 0; }
+  body #banner-home {
+    background: #0064bc;
+    padding-top: 0;
+    padding-bottom: 0; }
+    body #banner-home article {
+      float: left;
+      position: relative; }
+      body #banner-home article .txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+        body #banner-home article .txt .btnPlay {
+          height: 132px;
+          width: 132px;
+          margin: 0 auto 15px;
+          background: url("../img/btnPlay.png") center center no-repea; }
+        body #banner-home article .txt p {
+          font-size: 18px;
+          text-transform: uppercase; }
+          body #banner-home article .txt p strong {
+            color: #ffcc00; }
+      body #banner-home article.bannerLeft {
+        background: #ccc;
+        height: 500px;
+        width: 600px; }
+      body #banner-home article.bannerRight {
+        background: #ccc;
+        height: 250px;
+        width: 360px; }
+        body #banner-home article.bannerRight.top {
+          background: #ccc; }
+        body #banner-home article.bannerRight .txt {
+          bottom: 30px;
+          top: auto; }
+          body #banner-home article.bannerRight .txt p {
+            font-size: 14px; }
+  body #ultimos-videos .videos {
+    padding-top: 30px; }
+    body #ultimos-videos .videos article {
+      float: left;
+      height: 285px;
+      width: 48%;
+      display: block;
+      background: #ccc;
+      position: relative;
+      margin: 15px 1%; }
+      body #ultimos-videos .videos article .btnPlay {
+        height: 83px;
+        width: 83px;
+        display: block;
+        margin: 0 auto 15px;
+        background: url("../img/btnPlay-menor.png") center center no-repeat; }
+      body #ultimos-videos .videos article .txt {
+        position: absolute;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center; }
+        body #ultimos-videos .videos article .txt p {
+          font-size: 16px;
+          text-transform: uppercase; }
+        body #ultimos-videos .videos article .txt span {
+          display: block;
+          font-size: 12px;
+          color: #ffcc00;
+          text-transform: uppercase; }
+    body #ultimos-videos .videos .btnVerMais {
+      height: 50px;
+      width: 240px;
+      display: block;
+      border: 2px solid #ffcc00;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      margin-top: 20px; }
+      body #ultimos-videos .videos .btnVerMais a {
+        line-height: 50px;
+        color: #0092f2;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center; }
+  body #ultimas-fotos .fotos {
+    margin-top: 30px; }
+    body #ultimas-fotos .fotos .foto {
+      float: left;
+      height: 150px;
+      width: 48%;
+      display: block;
+      margin: 10px 1%; }
+      body #ultimas-fotos .fotos .foto .image {
+        background: #ccc;
+        height: 150px;
+        width: 47%;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: middle; }
+      body #ultimas-fotos .fotos .foto .txt {
+        width: 49%;
+        display: inline-block;
+        vertical-align: middle; }
+        body #ultimas-fotos .fotos .foto .txt p {
+          font-family: "Oswald-Bold", Arial, Sans-serif;
+          font-size: 20px;
+          color: #0092f2;
+          padding-bottom: 30px; }
+        body #ultimas-fotos .fotos .foto .txt span {
+          display: block;
+          font-size: 14px;
+          font-family: "Oswald-SemiBold", Arial, Sans-serif;
+          color: #767676; }
+    body #ultimas-fotos .fotos .btnVerMais {
+      height: 50px;
+      width: 240px;
+      display: block;
+      border: 2px solid #ffcc00;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      margin-top: 20px; }
+      body #ultimas-fotos .fotos .btnVerMais a {
+        line-height: 50px;
+        color: #0092f2;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center; }
+  body #ao-vivo .lives {
+    text-align: center; }
+    body #ao-vivo .lives .live {
+      display: inline-block;
+      margin: 20px 20px 0; }
+      body #ao-vivo .lives .live a {
+        height: 42px;
+        width: 120px;
+        display: block; }
+      body #ao-vivo .lives .live.facebook-live a {
+        background: url("../img/facebook-live.png") center center no-repeat; }
+      body #ao-vivo .lives .live.youtube-live a {
+        background: url("../img/youtube-live.png") center center no-repeat; }

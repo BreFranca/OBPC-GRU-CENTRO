@@ -1,0 +1,98 @@
+@import "bourbon/bourbon"
+@import "neat/neat"
+
+//  FONTS
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700')
+@include font-face("Oswald-Light", "fonts/Oswald-Light")
+@include font-face("Oswald-Regular", "fonts/Oswald-Regular")
+@include font-face("Oswald-Bold", "fonts/Oswald-Bold")
+@include font-face("Oswald-SemiBold", "fonts/Oswald-SemiBold")
+
+$oswaldLight: 'Oswald-Light', Arial, Sans-serif
+$oswaldRegular: 'Oswald-Regular', Arial, Sans-serif
+$oswaldBold: 'Oswald-Bold', Arial, Sans-serif
+$oswaldSemi: 'Oswald-SemiBold', Arial, Sans-serif
+// $nespressoBol: 'fa', Arial, Sans-serif
+
+
+//  COLORS
+
+$white: #ffffff
+$black: #000000
+$red: #e4231b
+$cyan: #0092f2
+$yellow: #ffcc00
+$blue: #0064bc
+$grey: #767676
+
+// EXTENDS CLASSES
+
+.hide
+	opacity: 0
+	visibility: hidden
+.show
+	opacity: 1
+	visibility: visible
+.transDefault
+	@include transition(all .2s ease-out)
+.circle
+	@include border-top-radius(50%)
+	@include border-bottom-radius(50%)
+.blockCenter
+	margin-left: auto
+	margin-right: auto
+.fleft
+	float: left
+.fright
+	float: right
+.clearfix
+	clear: both
+
+//  RESPONSIVE GRID
+$desktop-lg: new-breakpoint(min-width 993px 16)
+$desktop-md: new-breakpoint(max-width 992px 12)
+$desktop-sm: new-breakpoint(max-width 850px 11)
+$tablet: new-breakpoint(max-width 768px 10)
+$tablet-sm: new-breakpoint(max-width 480px 11)
+$mobile: new-breakpoint(max-width 425px 8)
+$mobile-sm: new-breakpoint(max-width 380px 8)
+$mobile-xs: new-breakpoint(max-width 325px 8)
+
+.gridE
+	width: 90%
+	@extend .blockCenter
+
+.gridD
+	max-width: 960px
+	@extend .blockCenter
+
+// RESET
+
+@mixin box-sizing($box)
+	@include prefixer(box-sizing, $box, webkit moz spec)
+
+html
+	+box-sizing(inherit)
+body
+	+box-sizing(border-box)
+	margin: 0
+	padding: 0
+	*
+		margin: 0
+		padding: 0
+	a, button, input, textarea
+		outline: none
+%clearfix		
+	content: '.'
+	display: block
+	clear: both
+	height: 0
+	line-height: 0
+	font-size: 0
+	visibility: hidden
+	overflow: hidden
+
+// MSG IE
+.msgUpdateIE
+	display: none
