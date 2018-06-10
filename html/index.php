@@ -179,17 +179,6 @@
 		</div>
 	</div>
 </section>
-<section id="ao-vivo">
-	<div class="gridD">
-		<div class="titleSec">
-			<h2>Assista nosos Cultos Ao Vivo</h2>
-		</div>
-		<div class="lives">
-			<div class="live facebook-live"><a href="#"></a></div>
-			<div class="live youtube-live"><a href="#"></a></div>
-		</div>
-	</div>
-</section>
 
 <?php require('content-newsletter.php'); ?>
 
