@@ -22,6 +22,14 @@ jQuery(function($){
 	    // instead of a settings object
 	  ]
 	});
+
+	$(".slick-programacoes").slick({
+		dots: false,
+		arrows: true,
+		slidesToShow: 3,
+		slidesToScroll: 1
+	});
+
 	$(".scroll").click(function(event){
 		event.preventDefault();
 		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
