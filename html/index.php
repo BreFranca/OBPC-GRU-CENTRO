@@ -180,6 +180,8 @@
 	</div>
 </section>
 
+<?php //require('content.php'); ?>
+
 <?php require('content-newsletter.php'); ?>
 
 <?php require('footer.php'); ?>

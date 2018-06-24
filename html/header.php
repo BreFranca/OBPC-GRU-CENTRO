@@ -32,7 +32,7 @@
 			<div class="logoMain"><img src="assets/img/logoMain.png" alt=""></div>
 			<nav>
 				<ul>
-				<li><a href="#">A OBRA OPBC</a></li>
+				<li><a href="interna.php">A OBRA OPBC</a></li>
 				<li><a href="#">PROGRAMAÇÃO</a>
 					<ul class="sub-menu">
 					<li><a href="#">Culto da Família</a></li>

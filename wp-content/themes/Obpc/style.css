@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@font-face {
+  font-family: "Oswald-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/Oswald-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Oswald-Light.woff2") format("woff2"), url("assets/fonts/Oswald-Light.woff") format("woff"), url("assets/fonts/Oswald-Light.ttf") format("truetype"), url("assets/fonts/Oswald-Light.svg#Oswald-Light") format("svg"); }
+@font-face {
+  font-family: "Oswald-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/Oswald-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Oswald-Regular.woff2") format("woff2"), url("assets/fonts/Oswald-Regular.woff") format("woff"), url("assets/fonts/Oswald-Regular.ttf") format("truetype"), url("assets/fonts/Oswald-Regular.svg#Oswald-Regular") format("svg"); }
+@font-face {
+  font-family: "Oswald-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/Oswald-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Oswald-Bold.woff2") format("woff2"), url("assets/fonts/Oswald-Bold.woff") format("woff"), url("assets/fonts/Oswald-Bold.ttf") format("truetype"), url("assets/fonts/Oswald-Bold.svg#Oswald-Bold") format("svg"); }
+@font-face {
+  font-family: "Oswald-SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/Oswald-SemiBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Oswald-SemiBold.woff2") format("woff2"), url("assets/fonts/Oswald-SemiBold.woff") format("woff"), url("assets/fonts/Oswald-SemiBold.ttf") format("truetype"), url("assets/fonts/Oswald-SemiBold.svg#Oswald-SemiBold") format("svg"); }
+.hide {
+  opacity: 0;
+  visibility: hidden; }
+
+.show {
+  opacity: 1;
+  visibility: visible; }
+
+.btnVerMais a, body header #menu nav ul.sub-menu {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+.circle {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%; }
+
+.blockCenter, .gridE, .gridD {
+  margin-left: auto;
+  margin-right: auto; }
+
+.fleft {
+  float: left; }
+
+.fright {
+  float: right; }
+
+.clearfix {
+  clear: both; }
+
+.gridE {
+  width: 90%; }
+
+.gridD {
+  max-width: 960px; }
+
+html {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+  body * {
+    margin: 0;
+    padding: 0; }
+  body a, body button, body input, body textarea {
+    outline: none; }
+
+body #banner-home:after, body #ultimos-videos .videos:after, body #ultimas-fotos .fotos:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  visibility: hidden;
+  overflow: hidden; }
+
+.msgUpdateIE {
+  display: none; }
+
+/* Theme Name: Obpc Guarulhos Centro
+ * Theme URI: http://obpcguarulhoscentro.com.br
+ * Author: Breno Franca
+ * Author URI: http://brefranca.com.br
+ * Description: Tema personalizado para a Igreja O Brasil para Cristo Guarulhos Centro
+ * Version: 1.0.0
+ * License: GNU General Public License v2 or later
+ * License URI: LICENSE
+ * Text Domain: BreFranca */
+.gridC {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.btnVerMais {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 20px; }
+  .btnVerMais a {
+    border: 2px solid #ffcc00;
+    display: block;
+    height: 50px;
+    width: 240px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 50px;
+    color: #0092f2;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center; }
+    .btnVerMais a:hover {
+      background: #ffcc00; }
+
+body {
+  font-family: arial;
+  font-size: 16px;
+  font-family: "Oswald-Regular", Arial, Sans-serif; }
+  body header #headerTop {
+    background: #0092f2;
+    padding: 20px 0; }
+    body header #headerTop .social-links {
+      float: left; }
+      body header #headerTop .social-links i {
+        display: inline-block;
+        margin-right: 25px;
+        color: #fff;
+        font-size: 24px; }
+    body header #headerTop .search {
+      float: left; }
+      body header #headerTop .search input {
+        height: 30px;
+        width: 200px; }
+    body header #headerTop .ao-vivo {
+      float: right; }
+      body header #headerTop .ao-vivo a {
+        font-size: 16px;
+        height: 30px;
+        width: 120px;
+        display: block;
+        line-height: 30px;
+        text-align: center;
+        background: #ffcc00;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase; }
+  body header #menu .logoMain img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 30px auto 40px; }
+  body header #menu nav {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    body header #menu nav ul {
+      text-align: center; }
+      body header #menu nav ul li {
+        display: inline-block;
+        position: relative;
+        padding: 0 30px; }
+        body header #menu nav ul li:hover .sub-menu {
+          opacity: 1;
+          visibility: visible; }
+        body header #menu nav ul li a {
+          font-size: 16px;
+          font-family: "Oswald-Bold", Arial, Sans-serif;
+          text-decoration: none;
+          color: #0092f2;
+          text-transform: uppercase; }
+      body header #menu nav ul.sub-menu {
+        position: absolute;
+        top: 40px;
+        min-width: 150px;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden; }
+        body header #menu nav ul.sub-menu li {
+          display: block;
+          text-align: left;
+          padding: 5px 10px;
+          background: #0092f2; }
+          body header #menu nav ul.sub-menu li a {
+            color: #ffffff;
+            text-transform: none;
+            font-size: 14px; }
+  body section {
+    padding: 50px 0; }
+    body section .titleSec h2 {
+      font-size: 36px;
+      text-align: center;
+      font-family: "Oswald-Bold", Arial, Sans-serif;
+      text-transform: uppercase; }
+      body section .titleSec h2:after {
+        content: " ";
+        display: block;
+        height: 4px;
+        width: 120px;
+        background: #0092f2;
+        margin: 10px auto 0; }
+  body #banner-home {
+    background: #0064bc;
+    padding-top: 0;
+    padding-bottom: 0; }
+    body #banner-home article {
+      float: left;
+      position: relative; }
+      body #banner-home article .txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+        body #banner-home article .txt .btnPlay {
+          height: 132px;
+          width: 132px;
+          margin: 0 auto 15px;
+          background: url("../img/btnPlay.png") center center no-repea; }
+        body #banner-home article .txt p {
+          font-size: 18px;
+          text-transform: uppercase; }
+          body #banner-home article .txt p strong {
+            color: #ffcc00; }
+      body #banner-home article.bannerLeft {
+        background: #ccc;
+        height: 500px;
+        width: 600px; }
+      body #banner-home article.bannerRight {
+        background: #ccc;
+        height: 250px;
+        width: 360px; }
+        body #banner-home article.bannerRight.top {
+          background: #ccc; }
+        body #banner-home article.bannerRight .txt {
+          bottom: 30px;
+          top: auto; }
+          body #banner-home article.bannerRight .txt p {
+            font-size: 14px; }
+  body #banner {
+    padding: 0;
+    height: 350px;
+    width: 100%;
+    background: url("../img/igreja.jpg") center center no-repeat;
+    background-size: cover; }
+  body #ultimas-programacoes .titleSec {
+    margin-bottom: 40px; }
+  body #ultimas-programacoes .slick-arrow {
+    height: 45px;
+    width: 45px; }
+    body #ultimas-programacoes .slick-arrow::before {
+      content: "";
+      display: block;
+      background: url("../img/arrow.png") center center no-repeat;
+      background-size: 100% auto;
+      height: 100%;
+      width: 100%; }
+    body #ultimas-programacoes .slick-arrow.slick-next::before {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  body #ultimas-programacoes .programacao .contain {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto; }
+  body #ultimas-programacoes .programacao .image {
+    background: #767676;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px; }
+  body #ultimas-programacoes .programacao h3 {
+    font-size: 24px;
+    color: #0064bc; }
+  body #ultimas-programacoes .programacao .date p {
+    color: #767676;
+    font-family: "Oswald-SemiBold", Arial, Sans-serif; }
+  body #ultimos-videos .videos {
+    padding-top: 30px; }
+    body #ultimos-videos .videos article {
+      float: left;
+      height: 285px;
+      width: 48%;
+      display: block;
+      background: #ccc;
+      position: relative;
+      margin: 15px 1%; }
+      body #ultimos-videos .videos article .btnPlay {
+        height: 83px;
+        width: 83px;
+        display: block;
+        margin: 0 auto 15px;
+        background: url("../img/btnPlay-menor.png") center center no-repeat; }
+      body #ultimos-videos .videos article .txt {
+        position: absolute;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center; }
+        body #ultimos-videos .videos article .txt p {
+          font-size: 16px;
+          text-transform: uppercase; }
+        body #ultimos-videos .videos article .txt span {
+          display: block;
+          font-size: 12px;
+          color: #ffcc00;
+          text-transform: uppercase; }
+  body #ultimas-fotos .fotos {
+    margin-top: 30px; }
+    body #ultimas-fotos .fotos .foto {
+      float: left;
+      height: 150px;
+      width: 48%;
+      display: block;
+      margin: 10px 1%; }
+      body #ultimas-fotos .fotos .foto .image {
+        background: #ccc;
+        height: 150px;
+        width: 47%;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: middle; }
+      body #ultimas-fotos .fotos .foto .txt {
+        width: 49%;
+        display: inline-block;
+        vertical-align: middle; }
+        body #ultimas-fotos .fotos .foto .txt p {
+          font-family: "Oswald-Bold", Arial, Sans-serif;
+          font-size: 20px;
+          color: #0092f2;
+          padding-bottom: 30px; }
+        body #ultimas-fotos .fotos .foto .txt span {
+          display: block;
+          font-size: 14px;
+          font-family: "Oswald-SemiBold", Arial, Sans-serif;
+          color: #767676; }
+  body #ao-vivo .lives {
+    text-align: center; }
+    body #ao-vivo .lives .live {
+      display: inline-block;
+      margin: 20px 20px 0; }
+      body #ao-vivo .lives .live a {
+        height: 42px;
+        width: 120px;
+        display: block; }
+      body #ao-vivo .lives .live.facebook-live a {
+        background: url("../img/facebook-live.png") center center no-repeat; }
+      body #ao-vivo .lives .live.youtube-live a {
+        background: url("../img/youtube-live.png") center center no-repeat; }
+  body .interna .titleSec {
+    margin-bottom: 30px; }
+  body #newsletter {
+    background: #0092f2; }
+    body #newsletter .columns {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center; }
+      body #newsletter .columns .column {
+        height: auto;
+        width: 50%;
+        padding-right: 15px;
+        padding-left: 15px; }
+    body #newsletter p {
+      color: #ffffff;
+      font-size: 20px; }
+    body #newsletter input[type=text] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      box-shadow: none;
+      border: none;
+      padding-left: 15px;
+      height: 40px;
+      width: calc(100% - 15px);
+      font-size: 16px; }
+      body #newsletter input[type=text]::-webkit-input-placeholder {
+        color: #0064bc; }
+      body #newsletter input[type=text]::-moz-placeholder {
+        color: #0064bc; }
+      body #newsletter input[type=text]:-moz-placeholder {
+        color: #0064bc; }
+      body #newsletter input[type=text]:-ms-input-placeholder {
+        color: #0064bc; }
+  body footer {
+    background: #0064bc;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    body footer #copyright p {
+      text-align: center;
+      color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */
