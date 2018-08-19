@@ -1,3 +1,12 @@
+/* Theme Name: Obpc Guarulhos Centro
+ * Theme URI: http://obpcguarulhoscentro.com.br
+ * Author: Breno Franca
+ * Author URI: http://brefranca.com.br
+ * Description: Tema personalizado para a Igreja O Brasil para Cristo Guarulhos Centro
+ * Version: 1.0.0
+ * License: GNU General Public License v2 or later
+ * License URI: LICENSE
+ * Text Domain: BreFranca */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @font-face {
   font-family: "Oswald-Light";
@@ -27,7 +36,7 @@
   opacity: 1;
   visibility: visible; }
 
-.btnVerMais a, body header #menu nav ul.sub-menu {
+.btnVerMais a, body header #menu nav ul li a, body header #menu nav ul.sub-menu {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   transition: all 0.2s linear; }
@@ -87,15 +96,6 @@ body #banner-home:after, body #ultimos-videos .videos:after, body #ultimas-fotos
 .msgUpdateIE {
   display: none; }
 
-/* Theme Name: Obpc Guarulhos Centro
- * Theme URI: http://obpcguarulhoscentro.com.br
- * Author: Breno Franca
- * Author URI: http://brefranca.com.br
- * Description: Tema personalizado para a Igreja O Brasil para Cristo Guarulhos Centro
- * Version: 1.0.0
- * License: GNU General Public License v2 or later
- * License URI: LICENSE
- * Text Domain: BreFranca */
 .gridC {
   max-width: 960px;
   margin: 0 auto; }
@@ -125,21 +125,54 @@ body {
   font-family: arial;
   font-size: 16px;
   font-family: "Oswald-Regular", Arial, Sans-serif; }
+  body.menu-fixed header #headerTop {
+    margin-bottom: 100px; }
+  body.menu-fixed header #menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2; }
   body header #headerTop {
     background: #0092f2;
-    padding: 20px 0; }
-    body header #headerTop .social-links {
-      float: left; }
-      body header #headerTop .social-links i {
-        display: inline-block;
-        margin-right: 25px;
-        color: #fff;
-        font-size: 24px; }
-    body header #headerTop .search {
-      float: left; }
-      body header #headerTop .search input {
-        height: 30px;
-        width: 200px; }
+    height: 60px; }
+    body header #headerTop .gridD {
+      height: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -o-justify-content: space-between;
+      justify-content: space-between;
+      -ms-flex-pack: justify; }
+    body header #headerTop .social-links a {
+      margin-right: 25px;
+      display: inline-block;
+      font-size: 24px; }
+    body header #headerTop .social-links i {
+      color: #fff; }
+    body header #headerTop .search input {
+      height: 30px;
+      width: 200px;
+      padding-left: 15px; }
     body header #headerTop .ao-vivo {
       float: right; }
       body header #headerTop .ao-vivo a {
@@ -153,20 +186,50 @@ body {
         color: #ffffff;
         text-decoration: none;
         text-transform: uppercase; }
-  body header #menu .logoMain img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 30px auto 40px; }
-  body header #menu nav {
-    padding-top: 20px;
-    padding-bottom: 20px; }
+  body header #menu {
+    height: 100px;
+    background: #ffffff; }
+    body header #menu .gridD {
+      height: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      box-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -o-justify-content: space-between;
+      justify-content: space-between;
+      -ms-flex-pack: justify; }
+    body header #menu .logoMain {
+      max-width: 200px; }
+      body header #menu .logoMain img {
+        display: block;
+        max-width: 100%;
+        height: auto; }
     body header #menu nav ul {
       text-align: center; }
       body header #menu nav ul li {
         display: inline-block;
         position: relative;
-        padding: 0 30px; }
+        padding: 0 20px; }
+        body header #menu nav ul li:last-child {
+          padding-right: 0; }
         body header #menu nav ul li:hover .sub-menu {
           opacity: 1;
           visibility: visible; }
@@ -175,7 +238,22 @@ body {
           font-family: "Oswald-Bold", Arial, Sans-serif;
           text-decoration: none;
           color: #0092f2;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          display: inline-block;
+          position: relative; }
+          body header #menu nav ul li a:hover {
+            color: #0064bc; }
+          body header #menu nav ul li a::after {
+            content: "";
+            display: none;
+            position: absolute;
+            right: 0;
+            bottom: -5px;
+            left: 0;
+            height: 2px;
+            background: #0092f2; }
+        body header #menu nav ul li.active a::after {
+          display: block; }
       body header #menu nav ul.sub-menu {
         position: absolute;
         top: 40px;
@@ -192,6 +270,8 @@ body {
             color: #ffffff;
             text-transform: none;
             font-size: 14px; }
+            body header #menu nav ul.sub-menu li a::after {
+              content: none; }
   body section {
     padding: 50px 0; }
     body section .titleSec h2 {

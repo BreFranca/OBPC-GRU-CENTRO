@@ -20,34 +20,34 @@
 						<input type="text" name="search" placeholder="Digite o que você procura">
 					</form>
 				</div>
-				<!-- <div class="ao-vivo"><a href="#">Ao Vivo</a></div> -->
-				<div class="clearfix"></div>
 			</div>
 		</div>
 		<div id="menu">
 			<div class="gridD">
-			<div class="logoMain">
-				<img src="<?php echo bloginfo('template_url'); ?>/assets/img/logoMain.png" alt="">
-			</div>
-			<nav>
-				<ul>
-					<li><a href="interna.php">A OBRA OPBC</a></li>
-					<li><a href="#">PROGRAMAÇÃO</a>
-						<ul class="sub-menu">
-						<li><a href="#">Culto da Família</a></li>
-						<li><a href="#">Culto de Oração</a></li>
-						<li><a href="#">Culto dos Jovens</a></li>
-						<li><a href="#">Culto da Colheita</a></li>
-						<li><a href="#">Culto de Missões</a></li>
-						<li><a href="#">Cultos Temáticos</a></li>
-						<li class="all"><a href="#">Toda a Programação</a></li>
-						</ul>
-					</li>
-					<li><a href="#">GALERIAS</a></li>
-					<li><a href="#">Notícias</a></li>
-					<li><a href="#">Fale Conosco</a></li>
-				</ul>
-			</nav>
+				<div class="logoMain">
+					<a href="<?php echo site_url(); ?>">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoMain.png" alt="">
+					</a>
+				</div>
+				<nav>
+					<ul>
+						<li class="active"><a href="interna.php">A OBRA OPBC</a></li>
+						<li><a href="#">PROGRAMAÇÃO</a>
+							<ul class="sub-menu">
+							<li><a href="#">Culto da Família</a></li>
+							<li><a href="#">Culto de Oração</a></li>
+							<li><a href="#">Culto dos Jovens</a></li>
+							<li><a href="#">Culto da Colheita</a></li>
+							<li><a href="#">Culto de Missões</a></li>
+							<li><a href="#">Cultos Temáticos</a></li>
+							<li class="all"><a href="#">Toda a Programação</a></li>
+							</ul>
+						</li>
+						<li><a href="#">GALERIAS</a></li>
+						<li><a href="#">Notícias</a></li>
+						<li><a href="#">Fale Conosco</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</header>

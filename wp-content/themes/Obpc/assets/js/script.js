@@ -34,4 +34,12 @@ jQuery(function($){
 		event.preventDefault();
 		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
 	});
+
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 160) {
+			$('body').addClass('menu-fixed');
+		} else {
+			$('body').removeClass('menu-fixed');
+		}
+	});
 });

@@ -1,4 +1,3 @@
-@import "assets/sass/config"
 
 /* Theme Name: Obpc Guarulhos Centro
  * Theme URI: http://obpcguarulhoscentro.com.br
@@ -9,6 +8,8 @@
  * License: GNU General Public License v2 or later
  * License URI: LICENSE
  * Text Domain: BreFranca*/
+
+@import "assets/sass/config"
 
 .gridC
 	max-width: 960px
@@ -29,7 +30,7 @@
 		text-transform: uppercase
 		text-decoration: none
 		text-align: center
-		@extend %transDefault
+		@extend %transition
 		&:hover
 			background: $yellow
 
@@ -38,21 +39,33 @@ body
 	font-family: arial
 	font-size: 16px
 	font-family: $oswaldRegular
+	&.menu-fixed
+		header
+			#headerTop
+				margin-bottom: 100px
+			#menu
+				+position(fixed, 0 0 null 0)
+				z-index: 2
 	header
 		#headerTop
 			background: $cyan
-			padding: 20px 0
+			height: 60px
+			.gridD
+				height: 100%
+				+display(flex)
+				+align-items(center)
+				+justify-content(space-between)
 			.social-links
-				float: left
-				i
-					display: inline-block
+				a
 					margin-right: 25px
-					color: #fff
+					display: inline-block
 					font-size: 24px
+				i
+					color: #fff
 			.search
-				float: left
 				input
 					+size(200px 30px)
+					padding-left: 15px
 			.ao-vivo
 				float: right
 				a
@@ -66,20 +79,28 @@ body
 					text-decoration: none
 					text-transform: uppercase
 		#menu
+			height: 100px
+			background: $white
+			.gridD
+				height: 100%
+				+display(flex)
+				+align-items(center)
+				+justify-content(space-between)
 			.logoMain
+				max-width: 200px
 				img
 					display: block
 					max-width: 100%
 					height: auto
-					+margin(30px auto 40px)
 			nav
-				+padding(20px null)
 				ul
 					text-align: center
 					li
 						display: inline-block
 						position: relative
-						+padding(0 30px)
+						+padding(0 20px)
+						&:last-child
+							padding-right: 0
 						&:hover
 							.sub-menu
 								opacity: 1
@@ -90,6 +111,21 @@ body
 							text-decoration: none
 							color: $cyan
 							text-transform: uppercase
+							display: inline-block
+							position: relative
+							@extend %transition
+							&:hover
+								color: $blue
+							&::after
+								content: ''
+								display: none
+								+position(absolute, null 0 -5px 0)
+								height: 2px
+								background: $cyan
+						&.active
+							a
+								&::after
+									display: block
 					&.sub-menu
 						position: absolute
 						top: 40px
@@ -97,7 +133,7 @@ body
 						z-index: 1
 						opacity: 0
 						visibility: hidden
-						@extend %transDefault
+						@extend %transition
 						li
 							display: block
 							text-align: left
@@ -107,6 +143,8 @@ body
 								color: $white
 								text-transform: none
 								font-size: 14px
+								&::after
+									content: none
 	section
 		+padding(50px 0)
 		.titleSec
